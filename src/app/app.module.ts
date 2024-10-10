@@ -5,14 +5,16 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { DataDisplayComponent } from './data-display/data-display.component';
 
+
 @NgModule({
   declarations: [
     AppComponent,
-    DataDisplayComponent
+    DataDisplayComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    
   ],
   providers: [],
   bootstrap: [AppComponent]
