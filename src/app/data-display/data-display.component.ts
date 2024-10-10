@@ -19,12 +19,19 @@ export class DataDisplayComponent implements OnInit {
   
   
   fetchData() {
-    this.httpClient.get('https://jsonplaceholder.typicode.com/users')
-      .subscribe((data: any) => {
-        console.log(data);
-        this.data = data;
-      } )
+    this.httpClient.get<any[]>('https://jsonplaceholder.typicode.com/users')
+      .subscribe({
+        next: (data) => {
+          console.log(data);
+          this.data = data;
+        },
+        error: (error) => {
+          console.error('Error fetching data:', error);
+        }
+     });
+
     }
+  }
 
   
   
