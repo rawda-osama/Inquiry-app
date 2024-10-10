@@ -36,5 +36,3 @@ export class DataDisplayComponent implements OnInit {
   
   
   
-
-}
