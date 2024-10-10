@@ -24,7 +24,7 @@ export class DataDisplayComponent implements OnInit {
         console.log(data);
         this.data = data;
       } )
-  }
+    }
 
   
   
